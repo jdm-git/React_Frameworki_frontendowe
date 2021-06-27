@@ -1,0 +1,239 @@
+.entities-page {
+    width: 70vw;
+    transition: 300ms;
+
+    .content {
+        height: fit-content;
+
+
+        .user-data-wrapper {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            .user-data {
+                background-color: white;
+                margin: 5px 5px 5px 0;
+                display: flex;
+                min-height: 150px;
+                box-shadow: 2px 3px 2px 1px #c3c3c3;
+
+                .data {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    margin-left: 5px;
+
+                    .name {
+                        font-size: 18px;
+                        margin-top: 3px;
+                        color: #0066ff;
+                        font-weight: bold;
+                    }
+
+                    .address {
+                        font-size: 14px;
+                        margin-bottom: 3px;
+                        color: rgb(167, 167, 167);
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .list-layout {
+        flex-direction: column;
+
+        .user-data {
+            width: calc(100% - 10px);
+        }
+    }
+
+    .mosaic-layout {
+        flex-direction: row;
+
+        .user-data {
+            width: calc(30% - 10px);
+        }
+    }
+}
+
+
+.top-bar>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.button-layout-container {
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #83b3fa;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 6px 15px;
+        margin: 0 5px;
+        width: 100px;
+        cursor: pointer;
+        transition: 300ms;
+
+        &.active {
+            background-color: #3684f8;
+        }
+    }
+
+
+}
+
+.icon {
+    cursor: pointer;
+}
+
+
+.settings {
+    display: flex;
+    transition: 300ms;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .filters {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-wrapper {
+        >* {
+            margin: 0 8px;
+            color: #145fd0;
+        }
+
+        .select-wrapper {
+            display: flex;
+            background-color: #6da4f8;
+            align-items: center;
+            color: white;
+            padding: 6px 15px;
+            justify-content: space-between;
+            border-radius: 6px;
+
+            select[disabled] {
+                background-color: #6da4f8;
+                border: none;
+                color: white
+            }
+        }
+
+        .container {
+            cursor: pointer;
+        }
+    }
+
+    .right-wrapper {
+        >* {
+            margin: 0 8px;
+            color: #145fd0;
+        }
+
+        .input-wrapper {
+            position: relative;
+
+            svg {
+                position: absolute;
+                right: 10px;
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid #145fd0;
+                border-radius: 4px;
+                text-indent: 10px;
+                height: 40px;
+                box-sizing: border-box;
+
+                &:focus {
+                    outline: none !important;
+                    border: 3px solid #145fd0;
+                }
+            }
+        }
+
+        .items {
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+.visible {
+    min-height: 40px;
+    opacity: 1;
+}
+
+.hidden {
+    min-height: 0;
+    height: 0;
+    opacity: 0;
+}
+
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 300ms;
+    background-color: #f5f7f9;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.conditionals-wrapper, .add-condition {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+
+
+
+    & > * {
+        margin: 0 3px;
+    }
+
+    font-size: 16px;
+
+    input, select {
+        padding: 5px 9px;
+        border: none;
+        color: #145fd0;
+    }
+    span {
+        font-size: 18px;
+        color: #145fd0;
+    }
+    svg {
+        color: #145fd0;
+    }
+} 
+
+.add-condition {
+    svg, span {
+        cursor: pointer;
+    }
+}

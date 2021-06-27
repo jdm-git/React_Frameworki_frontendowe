@@ -1,0 +1,98 @@
+.card {
+    background-color: white;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin: 15px 0;
+    width: 100%;
+    h3 {
+        color: rgb(0, 56, 139);
+        margin: 5px 0;
+        font-size: 20px;
+
+    }
+
+    p {
+        margin: 4px 0;
+        color:#575757;
+        font-size: 16px;
+    }
+
+    div {
+        
+        span {
+            font-size: 14px;
+            margin-right: 6px;
+        }
+    }
+
+
+  
+}
+
+.resume-component {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    
+    .filters {
+        display: flex;
+        justify-content: flex-end;
+      
+        width:100%;
+    
+        .options {
+            display: flex;
+            width:30%;
+            justify-content: space-around;
+            align-items: center;
+
+            .follow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .input-container {
+                height: 60%;
+                width: 13vw;
+                position: relative;
+                display: flex;
+                align-items: center;
+        
+                .search {
+                    position: absolute;
+                    right: 10px;
+                    cursor: pointer;
+                }
+        
+                input {
+                    width: 100%;
+                 
+                    border: 1px solid #cfcfcf;
+                    border-radius: 4px;
+                    text-indent: 10px;
+                    height: 40px;
+        
+        
+                    &:focus {
+                        outline: none !important;
+                        border: 3px solid #c1c1c1;
+                    }
+                }
+            }
+        }
+    }
+
+   
+}
+.pagination {
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: #6464e6;
+    }
+ 
+}

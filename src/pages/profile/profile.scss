@@ -1,0 +1,182 @@
+.Profile {
+  width: 70vw;
+
+  .container {
+    background-color: white;
+    border-radius: 6px;
+    padding: 8px 10px;
+
+    margin-top: 15px;
+    width: 100%;
+
+    .info-row {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .elements {
+        margin: 5px 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+          margin-left: 5px;
+        }
+
+        span,
+        svg {
+          color: #405ee4;
+        }
+      }
+    }
+
+    .user-wrapper {
+      display: flex;
+
+      .left-column {
+        width: 150px;
+
+        div {
+          img {
+            border-radius: 50%;
+            width: 100%;
+          }
+        }
+
+        text-align: center;
+        margin-right: 5px;
+      }
+
+      .right-column {
+        position: relative;
+        width: calc(100% - 150px);
+        display: flex;
+        flex-direction: column;
+
+        input,
+        select {
+          width: 200px;
+          margin: 6px;
+          padding: 5px 15px;
+
+          option {
+            color: black;
+          }
+        }
+
+        input[disabled],
+        select[disabled] {
+          background-color: transparent;
+          border: none;
+          color: black;
+
+          appearance: none;
+        }
+      }
+    }
+
+    .edit-wrapper {
+      display: flex;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      .edit {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.details {
+  position: relative;
+
+  h2 {
+    font-size: 18px;
+    color: #3457f0;
+  }
+
+  .details-input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    > input {
+      height: 25px;
+      margin: 2px;
+      border-radius: 6px;
+      border: 1px solid lightgray;
+      color: #526fee;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+.panelInformations {
+  font-weight: bold;
+  font-size: 16px;
+  label {
+    font-size: 13px;
+    color: darkgray;
+  }
+  .attachment {
+    background-color: darkgray;
+    font-weight: 200;
+    padding: 3px;
+    width: 25%;
+    text-align: center;
+  }
+}
+.infoTitle {
+  font-size: 22px;
+}
+.content {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.servicesAndProject {
+  label {
+    font-weight: 1000;
+  }
+  .correspondants {
+  }
+  .userRecord {
+    background-color: rgb(219, 245, 248);
+    margin-bottom: 2px;
+    padding: 5px 2px;
+    div {
+      span {
+        margin-left: 30px;
+        line-height: 30px;
+        img {
+          width: 30px;
+          border-radius: 50%;
+          vertical-align: middle;
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+}
+.proposals table {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  th {
+    padding-bottom: 10px;
+  }
+}
+.reviews table {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+  th {
+    padding-bottom: 10px;
+  }
+}
